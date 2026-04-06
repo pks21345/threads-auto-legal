@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Threads Auto OAuth Callback</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      max-width: 760px;
+      margin: 48px auto;
+      padding: 0 20px 80px;
+      line-height: 1.7;
+      color: #111827;
+    }
+    code {
+      background: #f3f4f6;
+      padding: 0.1rem 0.3rem;
+      border-radius: 4px;
+      word-break: break-all;
+    }
+    .muted { color: #6b7280; }
+  </style>
+</head>
+<body>
+  <p><a href="./index.html">Back</a></p>
+  <h1>OAuth Callback</h1>
+  <p class="muted">This page is used as the temporary public OAuth callback target for the Threads Auto MVP integration.</p>
+  <p>If you were redirected here after authorization, copy the full URL from your browser and return it to the operator workflow so the authorization code can be processed.</p>
+  <p><strong>Current URL:</strong></p>
+  <p><code id="current-url">Loading...</code></p>
+  <script>
+    document.getElementById('current-url').textContent = window.location.href;
+  </script>
+</body>
+</html>
